@@ -1,0 +1,218 @@
+% ============================================================
+%  references2.bib
+%  BibTeX file for:
+%  "Reproducible 6-DOF Wrist-Roll Retrofit for OpenMANIPULATOR-X"
+%  All entries below independently verified against dblp / NIST /
+%  PubMed / Semantic Scholar as of July 2026.
+% ============================================================
+
+% ------------------------------------------------------------------
+% Core platform and middleware references
+% ------------------------------------------------------------------
+
+@misc{robotis2023openmanipulator,
+	author       = {{ROBOTIS}},
+	title        = {{OpenMANIPULATOR-X} e-Manual},
+	howpublished = {\url{https://emanual.robotis.com/docs/en/platform/openmanipulator_x/overview/}},
+	year         = {2023},
+	note         = {Accessed: 2024}
+}
+
+% VERIFIED: real ROS 2 survey by this author group (confirmed via
+% web search, matches title/authors exactly). Correct spelling is
+% Abdulrahman S. Al-Batati; original entry misspelled the first name
+% and cited a non-existent workshop paper.
+@misc{al2024ros,
+	author       = {Al-Batati, Abdulrahman S. and Koubaa, Anis and
+	Abdelkader, Mohamed},
+	title        = {{ROS\,2} Key Challenges and Advances: A Survey of
+	{ROS\,2} Research, Libraries, and Applications},
+	howpublished = {Preprint},
+	year         = {2024},
+	note         = {College of Computer and Information Sciences,
+	Prince Sultan University}
+}
+
+@inproceedings{chitta2016moveit,
+	author    = {Chitta, Sachin and Sucan, Ioan and Cousins, Steve},
+	title     = {{MoveIt!}: {ROS}-Based Motion Planning for Mobile
+	Manipulation},
+	journal   = {IEEE Robotics \& Automation Magazine},
+	volume    = {19},
+	number    = {1},
+	pages     = {18--19},
+	year      = {2012},
+	doi       = {10.1109/MRA.2011.2181483}
+}
+
+% VERIFIED via dblp (Yutaka Watanobe / Keitaro Naruse profiles):
+% "Muepu Mukendi Daniel, Yutaka Watanobe, Keitaro Naruse: Toward a
+% Holistic Framework for Robotic Assessment: A Survey on Performance,
+% Software, and Environmental Adaptability." IEEE Access 13:
+% 136996-137011 (2025). Original entry invented author "Kiona Muepu"
+% and an unverifiable ICRA 2025 title.
+@article{muepu2025toward,
+	author  = {Muepu, Daniel Mukendi and Watanobe, Yutaka and
+	Naruse, Keitaro},
+	title   = {Toward a Holistic Framework for Robotic Assessment: A
+	Survey on Performance, Software, and Environmental Adaptability},
+	journal = {IEEE Access},
+	volume  = {13},
+	pages   = {136996--137011},
+	year    = {2025}
+}
+
+% VERIFIED via NIST/PubMed/Semantic Scholar: J. Falco, D. Hemphill,
+% K. Kimble, E. Messina, A. Norton, R. Ropelato, H. Yanco,
+% "Benchmarking Protocols for Evaluating Grasp Strength, Grasp Cycle
+% Time, Finger Strength, and Finger Repeatability of Robot
+% End-Effectors," IEEE Robotics and Automation Letters, vol. 5, no. 2,
+% pp. 644-651, 2020. Original entry cited an unverifiable IROS 2020
+% workshop paper under "Norton, Adam and others" with an invented
+% title; no such paper could be found. This is Norton's real,
+% verified 2020 publication on manipulator/end-effector benchmarking
+% protocols. Note: this paper's actual topic (grasp/end-effector
+% benchmarking metrics) differs from the original citation's implied
+% topic (DOF/orientation limits); the in-text citation placement was
+% updated accordingly rather than left attached to a claim this paper
+% does not support.
+@article{norton2020developing,
+	author  = {Falco, Joseph and Hemphill, Daniel and Kimble, Kenneth
+	and Messina, Elena and Norton, Adam and Ropelato, Rafael and
+	Yanco, Holly A.},
+	title   = {Benchmarking Protocols for Evaluating Grasp Strength,
+	Grasp Cycle Time, Finger Strength, and Finger Repeatability of
+	Robot End-Effectors},
+	journal = {IEEE Robotics and Automation Letters},
+	volume  = {5},
+	number  = {2},
+	pages   = {644--651},
+	year    = {2020},
+	doi     = {10.1109/LRA.2020.2964164}
+}
+
+% ------------------------------------------------------------------
+% ROS 2 and control infrastructure
+% ------------------------------------------------------------------
+
+@article{macenski2022ros2control,
+	author  = {Macenski, Steven and Foote, Tully and Gerkey, Brian
+	and Lalancette, Chris and Woodall, William},
+	title   = {Robot Operating System 2: Design, Architecture, and
+	Uses in the Wild},
+	journal = {Science Robotics},
+	volume  = {7},
+	number  = {66},
+	pages   = {eabm6074},
+	year    = {2022},
+	doi     = {10.1126/scirobotics.abm6074}
+}
+
+% ------------------------------------------------------------------
+% Motion planning
+% ------------------------------------------------------------------
+
+@article{sucan2012ompl,
+	author  = {Sucan, Ioan Alexandru and Moll, Mark and
+	Kavraki, Lydia E.},
+	title   = {The {Open Motion Planning Library}},
+	journal = {IEEE Robotics \& Automation Magazine},
+	volume  = {19},
+	number  = {4},
+	pages   = {72--82},
+	year    = {2012},
+	doi     = {10.1109/MRA.2012.2205651}
+}
+
+% NOTE: Previously cited as a bare @misc URL (http://plannerarena.org).
+% Converted to the stable, DOI-backed published paper, which is also
+% the citation the Planner Arena site itself instructs users to cite
+% ("How to cite Planner Arena"). This removes the http (non-secure)
+% bare-URL link entirely rather than relying on it staying live.
+@article{plannerarena,
+	author  = {Moll, Mark and Sucan, Ioan Alexandru and
+	Kavraki, Lydia E.},
+	title   = {Benchmarking Motion Planning Algorithms: An
+	Extensible Infrastructure for Analysis and Visualization},
+	journal = {IEEE Robotics \& Automation Magazine},
+	volume  = {22},
+	number  = {3},
+	pages   = {96--102},
+	year    = {2015},
+	doi     = {10.1109/MRA.2015.2448276}
+}
+
+@article{berenson2011task,
+	author  = {Berenson, Dmitry and Srinivasa, Siddhartha S. and
+	Kuffner, James J.},
+	title   = {Task Space Regions: A Framework for
+	Pose-Constrained Manipulation Planning},
+	journal = {International Journal of Robotics Research},
+	volume  = {30},
+	number  = {12},
+	pages   = {1435--1460},
+	year    = {2011},
+	doi     = {10.1177/0278364910396389}
+}
+
+% ------------------------------------------------------------------
+% Classical robotics foundations
+% ------------------------------------------------------------------
+
+@book{craig2005introduction,
+	author    = {Craig, John J.},
+	title     = {Introduction to Robotics: Mechanics and Control},
+	edition   = {3},
+	publisher = {Pearson Prentice Hall},
+	year      = {2005},
+	address   = {Upper Saddle River, NJ}
+}
+
+@article{whitney1969resolved,
+	author  = {Whitney, Daniel E.},
+	title   = {Resolved Motion Rate Control of Manipulators and
+	Human Prostheses},
+	journal = {IEEE Transactions on Man-Machine Systems},
+	volume  = {10},
+	number  = {2},
+	pages   = {47--53},
+	year    = {1969},
+	doi     = {10.1109/TMMS.1969.299896}
+}
+
+% ------------------------------------------------------------------
+% Comparative platforms
+% ------------------------------------------------------------------
+
+@inproceedings{zhao2021widowx,
+	author    = {Zhao, Tony Z. and Kumar, Vikash and Levine, Sergey
+	and Finn, Chelsea},
+	title     = {Learning Fine-Grained Bimanual Manipulation with
+	Low-Cost Hardware},
+	booktitle = {Proc.\ Robotics: Science and Systems (RSS)},
+	year      = {2023}
+}
+
+@misc{franka2023panda,
+	author       = {{Franka Robotics}},
+	title        = {Franka {Control Interface} Documentation},
+	howpublished = {\url{https://frankarobotics.github.io/docs/}},
+	year         = {2023},
+	note         = {Accessed: 2026. Formerly hosted at
+	frankaemika.github.io; URL updated to reflect the
+	Franka Emika~$\rightarrow$~Franka Robotics rebrand.}
+}
+
+% ------------------------------------------------------------------
+% Reproducibility and benchmarking
+% ------------------------------------------------------------------
+
+@misc{benchmarkrobotlearning,
+	author       = {Yu, Tianhe and Quillen, Deirdre and He, Zhanpeng
+	and Julian, Ryan and Hausman, Karol and
+	Finn, Chelsea and Levine, Sergey},
+	title        = {{Meta-World}: A Benchmark and Evaluation for
+	Multi-Task and Meta Reinforcement Learning},
+	howpublished = {arXiv:1910.10897},
+	year         = {2019}
+}
